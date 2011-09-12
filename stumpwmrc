@@ -97,7 +97,10 @@
 (define-key *top-map* (kbd "s-C-R") "loadrc")
 
 (defun show-window-info (a b)
-  (echo-string (current-screen) (window-name (current-window))))
+  (let ((window-string "No window"))
+    (when (current-window)
+      (setf window-string (window-name (current-window))))
+    (echo-string (current-screen) window-string)))
 
 ;; (setf *focus-window-hook* nil)
 
