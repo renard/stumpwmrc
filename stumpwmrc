@@ -108,7 +108,5 @@
 (add-hook *focus-window-hook*  'show-window-info)
 (add-hook *focus-frame-hook*  'show-window-info)
 
-
-
-
+(define-key *top-map* (kbd "s-m") "fullscreen")
 
