@@ -80,10 +80,12 @@
 
 
 (defun select-host-from-menu ()
-  (let* ((host (select-from-menu (current-screen)
-				(get-ssh-hosts)))
+  (let* ((host (completing-read (current-screen)
+				"ssh to "
+				(get-ssh-hosts)
+				:require-match t))
 	 (cmd (concatenate 'string "exec x-terminal-emulator -title "
-			   host
+			   "ssh:" host
 			   " -e ssh -t " host)))
     (message cmd)
     (run-commands cmd)
