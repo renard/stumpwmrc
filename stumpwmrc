@@ -1,16 +1,21 @@
 ;; -*- lisp -*-
 
-;; Some useful sources
+;;; Some useful sources
 ;; http://paste.lisp.org/display/75796
 ;; http://www.xsteve.at/prg/stumpwm/
+;; http://stumpwm.svkt.org/cgi-bin/wiki.pl/batman.stumpwmrc
+
 
 (in-package :stumpwm)
 
 ;; ;; Set the mouse policy to focus follows mouse;
 (setf *mouse-focus-policy* :sloppy) ;; :click, :ignore, :sloppy
 
-
+;; theming
 (set-font "-*-terminus-medium-r-normal-*-12-*-*-*-*-*-iso8859-1")
+(set-focus-color "#8ae834")
+(set-unfocus-color "#729fcf")
+
 
 ;; ;;; Window Appearance
 (setf *normal-border-width* 1
