@@ -58,6 +58,7 @@
 (define-key *top-map* (kbd "s-]") "gnext") ;
 (define-key *top-map* (kbd "s-[") "gprev") ;
 
+(define-key *top-map* (kbd "s-Escape") "delete-window")
 
 
 (defun get-ssh-hosts ()
