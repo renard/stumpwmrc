@@ -66,6 +66,15 @@
 
 (define-key *top-map* (kbd "M-Escape") "delete-window")
 
+(define-key *top-map* (kbd "s-x") "colon")
+(define-key *top-map* (kbd "s-k") "describe-key")
+(define-key *top-map* (kbd "s-f") "describe-function")
+(define-key *top-map* (kbd "s-c") "describe-command")
+(define-key *top-map* (kbd "s-v") "describe-variable")
+
+
+(define-key *top-map* (kbd "s-o") "fselect")
+
 
 (defun get-ssh-hosts ()
   "Parse ~/.ssh/config and return a sorted list of all hosts"
