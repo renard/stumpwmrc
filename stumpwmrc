@@ -29,7 +29,8 @@
 
 (define-key *top-map* (kbd "s--") "vsplit")
 (define-key *top-map* (kbd "s-\\") "hsplit") 
-
+(define-key *top-map* (kbd "s-C-BackSpace") "remove-split")
+(define-key *top-map* (kbd "s-BackSpace") "only")
 
 (define-key *top-map* (kbd "s-Return") "exec x-terminal-emulator") 
 
